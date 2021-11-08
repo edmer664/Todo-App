@@ -8,7 +8,7 @@ import {MdAdd} from 'react-icons/md'
 export default function Input(props: any) {
   const {todos, setter} = props;
   const addNote = () => {
-    setter([...todos,textInput]);
+    setter[textInput,...todos]);
     setTextInput("");
     (document.getElementById("inputField") as HTMLInputElement).value = "";
   };
